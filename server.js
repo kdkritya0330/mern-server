@@ -13,13 +13,13 @@ const errorMiddleware = require("./middlewares/error-middleware");
 const services = require("./controller/service-controller");
 //handle cors policy
 const corsOptions ={
-  origin:"http://localhost:5173",
+  origin:"http://18.212.146.102",
   methods:"GET, POST, PUT, DELETE, PATCH,    HEAD",
   credentials: true,
 };
 
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 
 
